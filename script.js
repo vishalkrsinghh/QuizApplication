@@ -37,7 +37,7 @@ let arr;
 let pipe = () => {
     container.style.display = "none";
     container2.style.display = "flex"
-    para.innerHTML = ` Hi,<b> ${text.value}</b> <p> You selected your Quiz topic is <strong>'<u>${pipebtn.value}</u>'</strong> </p> <p> Are you ready to give Quiz test. before going to start Quiz, Please read the below Instructions carefully. </p> <p><b> INSTRUCTION: </b> Read the Questions carefully and give you answer. you'll have _____ time to answer each questions. <strong>Before going to next Question you have to give answer in Input box, and then Click on CHECK button to Secure your answer. and After Clicking CHECK button You can Click NEXT button for Next Question. </strong> </p> <p>Best OF Luck.</p> <p>Click on Below Button to Start.</p> `
+    para.innerHTML = ` Hi,<b> ${text.value}</b> <p> You selected your Quiz topic is <strong>'<u>${pipebtn.value}</u>'</strong> </p> <p> Are you ready to give Quiz test. before going to start Quiz, Please read the below Instructions carefully. </p> <p><b> INSTRUCTION: </b> Read the Questions carefully and give you answer. you'll have <u>500 Seconds</u> to answer questions. <strong>Before going to next Question you have to give answer in Input box, and then Click on CHECK button to Secure your answer. and After Clicking CHECK button You can Click NEXT button for Next Question. Quiz will be auto Submitted, if Time will be over. </strong> </p> <p>Best OF Luck.</p> <p>Click on Below Button to Start.</p> `
 
     arr = [
         {
@@ -49,7 +49,7 @@ let pipe = () => {
             "option1": `<div class="que" > <li> <span class="anspn" >A.</span> 1:1 </li> </div>  `,
             "option2": `<div class="que" > <li> <span class="anspn" >B.</span> 2:3</li></div> `,
             "option3": `<div class="que" > <li> <span class="anspn" >C.</span>  3:2 </li> </div> `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp1" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp1" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `C`
         },
         {
@@ -61,7 +61,7 @@ let pipe = () => {
             "option1": ` <div class="que" > <li> <span class="anspn" >A.</span> 17 Hours 17 Min </li></div>  `,
             "option2": ` <div class="que" > <li > <span class="anspn" >B.</span>34 Hours 60/7 Min </li> </div> `,
             "option3": ` <div class="que" > <li > <span class="anspn" >C.</span> 35 Hours 15 Min </li></div>   `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp2" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp2" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `B`
         },
         {
@@ -72,7 +72,7 @@ let pipe = () => {
             "option1": ` <div class="que" > <li> <span class="anspn" >A.</span>  50%  </li> </div>   `,
             "option2": ` <div class="que" > <li > <span class="anspn" >B.</span> 48%   </li></div>  `,
             "option3": ` <div class="que" > <li > <span class="anspn" >C.</span> 40% </li></div>   `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp3" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp3" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `C`
         },
         {
@@ -82,7 +82,7 @@ let pipe = () => {
             "option1": `  <div class="que" > <li> <span class="anspn" >A.</span> 45 Minutes  </li> </div>    `,
             "option2": ` <div class="que" > <li > <span class="anspn" >B.</span> 49 Minutes </li>  </div> `,
             "option3": ` <div class="que" > <li > <span class="anspn" >C.</span> 63 Minutes </li>  </div>  `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp4" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp4" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `A`
         },
         {
@@ -93,7 +93,7 @@ let pipe = () => {
             "option1": ` <div class="que" > <li> <span class="anspn" >A.</span>  15 Hours</li>  </div>   `,
             "option2": ` <div class="que" > <li ><span class="anspn" >B.</span>  18 Hours </li> </div>  `,
             "option3": ` <div class="que" > <li ><span class="anspn" >C.</span> 20 Hours </li> </div>   `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp5" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp5" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `B`
         },
         {
@@ -102,7 +102,7 @@ let pipe = () => {
             "option1": `<div class="que" > <li ><span class="anspn" >A.</span> 20 Minutes </li> </div>    `,
             "option2": ` <div class="que" ><li  ><span class="anspn" >B.</span> 30 Minutes </li> </div>  `,
             "option3": ` <div class="que" ><li  ><span class="anspn" >C.</span> 40 Minutes </li> </div>   `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp6" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp6" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `C`
         },
         {
@@ -113,7 +113,7 @@ let pipe = () => {
             "option1": `<div class="que" > <li ><span class="anspn" >A.</span>  16 Minutes </li>   </div> `,
             "option2": ` <div class="que" ><li  ><span class="anspn" >B.</span> 20 Minutes </li> </div> `,
             "option3": ` <div class="que" ><li  ><span class="anspn" >C.</span>  12 Minutes </li>  </div> `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp7" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp7" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `B`
         },
         {
@@ -124,7 +124,7 @@ let pipe = () => {
             "option1": `<div class="que" ><li > <span class="anspn" >A.</span> 7 Hours 20 Min </li>  </div>  `,
             "option2": `<div class="que" ><li  ><span class="anspn" >B.</span> 7 Hours </li> </div> `,
             "option3": `<div class="que" ><li  ><span class="anspn" >C.</span>  None </li> </div>  `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp8" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp8" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `A`
         },
         {
@@ -134,7 +134,7 @@ let pipe = () => {
             "option1": `<div class="que" ><li ><span class="anspn" >A.</span> 4 minutes </li> </div>   `,
             "option2": `<div class="que" ><li  ><span class="anspn" >B.</span> 8 minutes </li></div>  `,
             "option3": `<div class="que" ><li  ><span class="anspn" >C.</span>  6 minutes  </li> </div>  `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp9" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp9" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `C`
         },
         {
@@ -144,7 +144,7 @@ let pipe = () => {
             "option1": `<div class="que" > <li ><span class="anspn" >A.</span>128 minutes </li> </div>   `,
             "option2": `<div class="que" > <li  ><span class="anspn" >B.</span>124 minutes </li></div>  `,
             "option3": `<div class="que" > <li  ><span class="anspn" >C.</span> 154 minutes </li></div>   `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp10" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp10" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `A`
         }
     ];
@@ -306,12 +306,12 @@ let chec = () => {
         arr2.splice(0, 0, inp1);
 
         if (arr2[cc - cc] == ansQ) {
-            answer[0].innerHTML = `✔️✔️Correct ANSWER✔️✔️`
+            answer[0].innerHTML = `✅✔️ Correct ANSWER ✔️✅`
             answer[0].style.borderColor="green";
             score++;
         }
         else {
-            answer[0].innerHTML = ` ❌❌ You Opted &nbsp "${arr2[cc - cc]}"❌❌  <p> CORRECT OPTION is &nbsp "${ansQ}" </p> `
+            answer[0].innerHTML = ` ❌❌ You Opted &nbsp "${arr2[cc - cc]}" ❌❌  <p> CORRECT OPTION is &nbsp "${ansQ}" </p> `
             answer[0].style.borderColor="red";
             wrong++;
         }
@@ -324,12 +324,12 @@ let chec = () => {
         arr2.splice(0, 1, inp2);
         answer.innerHTML = `${arr2[cc - 1]}`
         if (arr2[cc - cc] == ansQ) {
-            answer[1].innerHTML = `✔️✔️Correct ANSWER✔️✔️`
+            answer[1].innerHTML = `✅✔️ Correct ANSWER ✔️✅`
             answer[1].style.borderColor="green";
             score++;
         }
         else {
-            answer[1].innerHTML = ` ❌❌ You Opted &nbsp "${arr2[cc - cc]}"❌❌  <p> CORRECT OPTION is &nbsp "${ansQ}" </p> `
+            answer[1].innerHTML = ` ❌❌ You Opted &nbsp "${arr2[cc - cc]}" ❌❌  <p> CORRECT OPTION is &nbsp "${ansQ}" </p> `
             answer[1].style.borderColor="red";
             wrong++;
         }
@@ -340,12 +340,12 @@ let chec = () => {
         inp3 = document.getElementById("inp3").value.toUpperCase();
         arr2.splice(0, 2, inp3);
         if (arr2[cc - cc] == ansQ) {
-            answer[2].innerHTML = `✔️✔️Correct ANSWER✔️✔️`
+            answer[2].innerHTML = `✅✔️ Correct ANSWER ✔️✅`
             answer[2].style.borderColor="green";
             score++;
         }
         else {
-            answer[2].innerHTML = ` ❌❌ You Opted &nbsp "${arr2[cc - cc]}"❌❌  <p> CORRECT OPTION is &nbsp "${ansQ}" </p> `
+            answer[2].innerHTML = ` ❌❌ You Opted &nbsp "${arr2[cc - cc]}" ❌❌  <p> CORRECT OPTION is &nbsp "${ansQ}" </p> `
             answer[2].style.borderColor="red";
             wrong++;
         }
@@ -356,12 +356,12 @@ let chec = () => {
         inp4 = document.getElementById("inp4").value.toUpperCase();
         arr2.splice(0, 3, inp4);
         if (arr2[cc - cc] == ansQ) {
-            answer[3].innerHTML = `✔️✔️Correct ANSWER✔️✔️`
+            answer[3].innerHTML = `✅✔️ Correct ANSWER ✔️✅`
             answer[3].style.borderColor="green";
             score++;
         }
         else {
-            answer[3].innerHTML = ` ❌❌ You Opted &nbsp "${arr2[cc - cc]}"❌❌  <p> CORRECT OPTION is &nbsp "${ansQ}" </p> `
+            answer[3].innerHTML = ` ❌❌ You Opted &nbsp "${arr2[cc - cc]}" ❌❌  <p> CORRECT OPTION is &nbsp "${ansQ}" </p> `
             answer[3].style.borderColor="red";
             wrong++;
         }
@@ -372,12 +372,12 @@ let chec = () => {
         inp5 = document.getElementById("inp5").value.toUpperCase();
         arr2.splice(0, 4, inp5);
         if (arr2[cc - cc] == ansQ) {
-            answer[4].innerHTML = `✔️✔️Correct ANSWER✔️✔️`
+            answer[4].innerHTML = `✅✔️ Correct ANSWER ✔️✅`
             answer[4].style.borderColor="green";
             score++;
         }
         else {
-            answer[4].innerHTML = ` ❌❌ You Opted &nbsp "${arr2[cc - cc]}"❌❌  <p> CORRECT OPTION is &nbsp "${ansQ}" </p> `
+            answer[4].innerHTML = ` ❌❌ You Opted &nbsp "${arr2[cc - cc]}" ❌❌  <p> CORRECT OPTION is &nbsp "${ansQ}" </p> `
             answer[4].style.borderColor="red";
             wrong++;
         }
@@ -388,12 +388,12 @@ let chec = () => {
         inp6 = document.getElementById("inp6").value.toUpperCase();
         arr2.splice(0, 5, inp6);
         if (arr2[cc - cc] == ansQ) {
-            answer[5].innerHTML = `✔️✔️Correct ANSWER✔️✔️`
+            answer[5].innerHTML = `✅✔️ Correct ANSWER ✔️✅`
             answer[5].style.borderColor="green";
             score++;
         }
         else {
-            answer[5].innerHTML = ` ❌❌ You Opted &nbsp "${arr2[cc - cc]}"❌❌  <p> CORRECT OPTION is &nbsp "${ansQ}" </p> `
+            answer[5].innerHTML = ` ❌❌ You Opted &nbsp "${arr2[cc - cc]}" ❌❌  <p> CORRECT OPTION is &nbsp "${ansQ}" </p> `
             answer[5].style.borderColor="red";
             wrong++;
         }
@@ -404,12 +404,12 @@ let chec = () => {
         inp7 = document.getElementById("inp7").value.toUpperCase();
         arr2.splice(0, 6, inp7);
         if (arr2[cc - cc] == ansQ) {
-            answer[6].innerHTML = `✔️✔️Correct ANSWER✔️✔️`
+            answer[6].innerHTML = `✅✔️ Correct ANSWER ✔️✅`
             answer[6].style.borderColor="green";
             score++;
         }
         else {
-            answer[6].innerHTML = ` ❌❌ You Opted &nbsp "${arr2[cc - cc]}"❌❌  <p> CORRECT OPTION is &nbsp "${ansQ}" </p> `
+            answer[6].innerHTML = ` ❌❌ You Opted &nbsp "${arr2[cc - cc]}" ❌❌  <p> CORRECT OPTION is &nbsp "${ansQ}" </p> `
             answer[6].style.borderColor="red";
             wrong++;
         }
@@ -420,13 +420,13 @@ let chec = () => {
         inp8 = document.getElementById("inp8").value.toUpperCase();
         arr2.splice(0, 7, inp8);
         if (arr2[cc - cc] == ansQ) {
-            answer[7].innerHTML = `✔️✔️Correct ANSWER✔️✔️`
+            answer[7].innerHTML = `✅✔️ Correct ANSWER ✔️✅`
             answer[7].style.borderColor="green";
             score++;
           
         }
         else {
-            answer[7].innerHTML = ` ❌❌ You Opted &nbsp "${arr2[cc - cc]}"❌❌  <p> CORRECT OPTION is &nbsp "${ansQ}" </p> `
+            answer[7].innerHTML = ` ❌❌ You Opted &nbsp "${arr2[cc - cc]}" ❌❌  <p> CORRECT OPTION is &nbsp "${ansQ}" </p> `
             answer[7].style.borderColor="red";
             wrong++;
           
@@ -438,13 +438,13 @@ let chec = () => {
         inp9 = document.getElementById("inp9").value.toUpperCase();
         arr2.splice(0, 8, inp9);
         if (arr2[cc - cc] == ansQ) {
-            answer[8].innerHTML = `✔️✔️Correct ANSWER✔️✔️`
+            answer[8].innerHTML = `✅✔️ Correct ANSWER ✔️✅`
             answer[8].style.borderColor="green";
             score++;
           
         }
         else {
-            answer[8].innerHTML = ` ❌❌ You Opted &nbsp "${arr2[cc - cc]}"❌❌  <p> CORRECT OPTION is &nbsp "${ansQ}" </p> `
+            answer[8].innerHTML = ` ❌❌ You Opted &nbsp "${arr2[cc - cc]}" ❌❌  <p> CORRECT OPTION is &nbsp "${ansQ}" </p> `
             answer[8].style.borderColor="red";
             wrong++;
         }
@@ -455,12 +455,12 @@ let chec = () => {
         inp10 = document.getElementById("inp10").value.toUpperCase();
         arr2.splice(0, 9, inp10);
         if (arr2[cc - cc] == ansQ) {
-            answer[9].innerHTML = `✔️✔️Correct ANSWER✔️✔️`
+            answer[9].innerHTML = `✅✔️ Correct ANSWER ✔️✅`
             answer[9].style.borderColor="green";
             score++;
         }
         else {
-            answer[9].innerHTML = ` ❌❌ You Opted &nbsp "${arr2[cc - cc]}"❌❌  <p> CORRECT OPTION is &nbsp "${ansQ}" </p> `
+            answer[9].innerHTML = ` ❌❌ You Opted &nbsp "${arr2[cc - cc]}" ❌❌  <p> CORRECT OPTION is &nbsp "${ansQ}" </p> `
             answer[9].style.borderColor="red";
             wrong++;
         }
@@ -488,7 +488,7 @@ let subm = () => {
         answer[i].style.display = "none";
     }
 
-    container4.innerHTML = `<h2>Quiz Result </h2><div> <strong> ${text.value}, </strong> Your result is:</div> <div>Total time taken: <b>${500-time} Seconds</b></div>   <div> Total Questions: <b>10</b> </div> <div>Answered: <b>${answered}</b></div>  <div>Unanswered: <b>${10-answered}</b></div>  <div>Wrong: <b>${wrong}</b></div>  <div>Score: <b>${score}</b></div>   <div>Percentage: <b>${(score / 10 * 100)}%</b></div>`
+    container4.innerHTML = `<h2 style=" color:darkturquoise; ">Quiz Result </h2><div> <strong> ${text.value}, </strong> Your result is:</div> <div>Total time taken: <b>${500-time} Seconds</b></div>   <div> Total Questions: <b>10</b> </div> <div>Answered: <b>${answered}</b></div>  <div>Unanswered: <b>${10-answered}</b></div>  <div>Wrong: <b>${wrong}</b></div>  <div>Score: <b>${score}</b></div>   <div>Percentage: <b>${(score / 10 * 100)}%</b></div>`
 }
 
 
@@ -507,14 +507,14 @@ let strtA = () => {
 let probo = () => {       
     container.style.display = "none";
     container2.style.display = "flex"
-    para.innerHTML = ` Hi,<b> ${text.value}</b> <p> you selected your Quiz topic is <strong>'<u>${probobtn.value}</u>'</strong> </p> <p> Are you ready to give Quiz test. before going to start Quiz, Please read the below Instructions carefully. </p> <p><b> INSTRUCTION: </b> Read the Questions carefully and give you answer. you'll have _____ time to answer each questions. <strong>Before going to next Question you have to give answer in Input box, and then Click on CHECK button to Secure your answer. and After Clicking CHECK button You can Click NEXT button for Next Question. </strong> </p> <p>Best OF Luck.</p> <p>Click on Below Button to Start.</p> `
+    para.innerHTML = ` Hi,<b> ${text.value}</b> <p> you selected your Quiz topic is <strong>'<u>${probobtn.value}</u>'</strong> </p> <p> Are you ready to give Quiz test. before going to start Quiz, Please read the below Instructions carefully. </p> <p><b> INSTRUCTION: </b> Read the Questions carefully and give you answer. you'll have <u>500 Seconds</u> to answer questions. <strong>Before going to next Question you have to give answer in Input box, and then Click on CHECK button to Secure your answer. and After Clicking CHECK button You can Click NEXT button for Next Question. Quiz will be auto Submitted, if Time will be over. </strong> </p> <p>Best OF Luck.</p> <p>Click on Below Button to Start.</p> `
     arr = [
         {
             "que": `<div class="que" > <span class="anspn" >Q-1. </span> A problem is given to three students whose chances of solving it are 1/2, 1/3 and 1/4 respectively. What is the probability that the problem will be solved?</div>`,
             "option1": `<div class="que" > <li> <span class="anspn" >A.</span>  1/4 </li> </div>  `,
             "option2": `<div class="que" > <li> <span class="anspn" >B.</span> 3/4 </li></div> `,
             "option3": `<div class="que" > <li> <span class="anspn" >C.</span> 1/2 </li> </div> `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp1" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp1" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `B`
         },
         {
@@ -522,7 +522,7 @@ let probo = () => {
             "option1": ` <div class="que" > <li> <span class="anspn" >A.</span>  3/5 </li></div>  `,
             "option2": ` <div class="que" > <li > <span class="anspn" >B.</span> 8/15 </li> </div> `,
             "option3": ` <div class="que" > <li > <span class="anspn" >C.</span> 9/20</li></div>   `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp2" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp2" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `C`
         },
         {
@@ -530,7 +530,7 @@ let probo = () => {
             "option1": ` <div class="que" > <li> <span class="anspn" >A.</span>  52/221 </li> </div>   `,
             "option2": ` <div class="que" > <li > <span class="anspn" >B.</span> 55/221 </li></div>  `,
             "option3": ` <div class="que" > <li > <span class="anspn" >C.</span> 19/221 </li></div>   `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp3" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp3" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `B`
         },
         {
@@ -538,7 +538,7 @@ let probo = () => {
             "option1": `  <div class="que" > <li> <span class="anspn" >A.</span>  3/22 </li> </div>    `,
             "option2": ` <div class="que" > <li > <span class="anspn" >B.</span>  2/91</li>  </div> `,
             "option3": ` <div class="que" > <li > <span class="anspn" >C.</span>  1/22 </li>  </div>  `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp4" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp4" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `B`
         },
         {
@@ -546,7 +546,7 @@ let probo = () => {
             "option1": ` <div class="que" > <li> <span class="anspn" >A.</span> 7/15 </li>  </div>   `,
             "option2": ` <div class="que" > <li ><span class="anspn" >B.</span> 8/15 </li> </div>  `,
             "option3": ` <div class="que" > <li ><span class="anspn" >C.</span> 1/9 </li> </div>   `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp5" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp5" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `A`
         },
         {
@@ -554,7 +554,7 @@ let probo = () => {
             "option1": `<div class="que" > <li ><span class="anspn" >A.</span> 1/5 </li> </div>    `,
             "option2": ` <div class="que" ><li  ><span class="anspn" >B.</span>  2/7 </li> </div>  `,
             "option3": ` <div class="que" ><li  ><span class="anspn" >C.</span> 5/7 </li> </div>   `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp6" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp6" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `B`
         },
         {
@@ -562,7 +562,7 @@ let probo = () => {
             "option1": `<div class="que" > <li ><span class="anspn" >A.</span> 7/9</li>   </div> `,
             "option2": ` <div class="que" ><li  ><span class="anspn" >B.</span> 1/6 </li> </div> `,
             "option3": ` <div class="que" ><li  ><span class="anspn" >C.</span> 5/12 </li>  </div> `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp7" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp7" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `C`
         },
         {
@@ -570,7 +570,7 @@ let probo = () => {
             "option1": `<div class="que" ><li > <span class="anspn" >A.</span>  1/3 </li>  </div>  `,
             "option2": `<div class="que" ><li  ><span class="anspn" >B.</span> 8/21 </li> </div> `,
             "option3": `<div class="que" ><li  ><span class="anspn" >C.</span>  7/21 </li> </div>  `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp8" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp8" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `A`
         },
         {
@@ -578,7 +578,7 @@ let probo = () => {
             "option1": `<div class="que" ><li ><span class="anspn" >A.</span>  1/221 </li> </div>   `,
             "option2": `<div class="que" ><li  ><span class="anspn" >B.</span> 35/256 </li></div>  `,
             "option3": `<div class="que" ><li  ><span class="anspn" >C.</span> None </li> </div>  `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp9" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp9" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `A`
         },
         {
@@ -586,7 +586,7 @@ let probo = () => {
             "option1": `<div class="que" > <li ><span class="anspn" >A.</span> 29/34 </li> </div>   `,
             "option2": `<div class="que" > <li  ><span class="anspn" >B.</span> 47/100</li></div>  `,
             "option3": `<div class="que" > <li  ><span class="anspn" >C.</span> 13/102 </li></div>   `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp10" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp10" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `C`
         }
     ];
@@ -597,14 +597,14 @@ let age=()=>{
     
     container.style.display = "none";
     container2.style.display = "flex"
-    para.innerHTML = ` Hi,<b> ${text.value}</b> <p> you selected your Quiz topic is <strong>'<u>${agebtn.value}</u>'</strong> </p> <p> Are you ready to give Quiz test. before going to start Quiz, Please read the below Instructions carefully. </p> <p><b> INSTRUCTION: </b> Read the Questions carefully and give you answer. you'll have _____ time to answer each questions. <strong>Before going to next Question you have to give answer in Input box, and then Click on CHECK button to Secure your answer. and After Clicking CHECK button You can Click NEXT button for Next Question. </strong> </p> <p>Best OF Luck.</p> <p>Click on Below Button to Start.</p> `
+    para.innerHTML = ` Hi,<b> ${text.value}</b> <p> you selected your Quiz topic is <strong>'<u>${agebtn.value}</u>'</strong> </p> <p> Are you ready to give Quiz test. before going to start Quiz, Please read the below Instructions carefully. </p> <p><b> INSTRUCTION: </b> Read the Questions carefully and give you answer. you'll have <u>500 Seconds</u> to answer questions. <strong>Before going to next Question you have to give answer in Input box, and then Click on CHECK button to Secure your answer. and After Clicking CHECK button You can Click NEXT button for Next Question. Quiz will be auto Submitted, if Time will be over. </strong> </p> <p>Best OF Luck.</p> <p>Click on Below Button to Start.</p> `
     arr = [
         {
             "que": `<div class="que" > <span class="anspn" >Q-1. </span> Father is aged three times more than his son Ronit. After 8 years, he would be two and a half times of Ronit's age. After further 8 years, how many times would he be of Ronit's age?</div>`,
             "option1": `<div class="que" > <li> <span class="anspn" >A.</span>  2 times </li> </div>  `,
             "option2": `<div class="que" > <li> <span class="anspn" >B.</span> 2.5 times </li></div> `,
             "option3": `<div class="que" > <li> <span class="anspn" >C.</span> 3 times </li> </div> `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp1" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp1" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `A`
         },
         {
@@ -612,7 +612,7 @@ let age=()=>{
             "option1": ` <div class="que" > <li> <span class="anspn" >A.</span>  8 years </li></div>  `,
             "option2": ` <div class="que" > <li > <span class="anspn" >B.</span> 10 years </li> </div> `,
             "option3": ` <div class="que" > <li > <span class="anspn" >C.</span> 4 years</li></div>   `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp2" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp2" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `C`
         },
         {
@@ -620,7 +620,7 @@ let age=()=>{
             "option1": ` <div class="que" > <li> <span class="anspn" >A.</span>  19 years </li> </div>   `,
             "option2": ` <div class="que" > <li > <span class="anspn" >B.</span> 14 years </li></div>  `,
             "option3": ` <div class="que" > <li > <span class="anspn" >C.</span> 33 years  </li></div>   `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp3" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp3" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `B`
         },
         {
@@ -628,7 +628,7 @@ let age=()=>{
             "option1": `  <div class="que" > <li> <span class="anspn" >A.</span>  10 years </li> </div>    `,
             "option2": ` <div class="que" > <li > <span class="anspn" >B.</span> 9 years</li>  </div> `,
             "option3": ` <div class="que" > <li > <span class="anspn" >C.</span>  20 years </li>  </div>  `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp4" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp4" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `A`
         },
         {
@@ -636,7 +636,7 @@ let age=()=>{
             "option1": ` <div class="que" > <li> <span class="anspn" >A.</span> 24 years </li>  </div>   `,
             "option2": ` <div class="que" > <li ><span class="anspn" >B.</span> 27 years </li> </div>  `,
             "option3": ` <div class="que" > <li ><span class="anspn" >C.</span> 35 years</li> </div>   `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp5" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp5" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `A`
         },
         {
@@ -644,7 +644,7 @@ let age=()=>{
             "option1": `<div class="que" > <li ><span class="anspn" >A.</span> 20 years </li> </div>    `,
             "option2": ` <div class="que" ><li  ><span class="anspn" >B.</span>  22 years </li> </div>  `,
             "option3": ` <div class="que" ><li  ><span class="anspn" >C.</span> 18 years </li> </div>   `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp6" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp6" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `B`
         },
         {
@@ -652,7 +652,7 @@ let age=()=>{
             "option1": `<div class="que" > <li ><span class="anspn" >A.</span> 20 years</li>   </div> `,
             "option2": ` <div class="que" ><li  ><span class="anspn" >B.</span> 18 years </li> </div> `,
             "option3": ` <div class="que" ><li  ><span class="anspn" >C.</span> 16 years </li>  </div> `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp7" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp7" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `C`
         },
         {
@@ -660,7 +660,7 @@ let age=()=>{
             "option1": `<div class="que" ><li > <span class="anspn" >A.</span>  14 years </li>  </div>  `,
             "option2": `<div class="que" ><li  ><span class="anspn" >B.</span> 20 years </li> </div> `,
             "option3": `<div class="que" ><li  ><span class="anspn" >C.</span>  12 years </li> </div>  `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp8" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp8" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `B`
         },
         {
@@ -668,7 +668,7 @@ let age=()=>{
             "option1": `<div class="que" ><li ><span class="anspn" >A.</span>  15 years </li> </div>   `,
             "option2": `<div class="que" ><li  ><span class="anspn" >B.</span> 19 and half </li></div>  `,
             "option3": `<div class="que" ><li  ><span class="anspn" >C.</span> None </li> </div>  `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp9" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp9" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `A`
         },
         {
@@ -676,7 +676,7 @@ let age=()=>{
             "option1": `<div class="que" > <li ><span class="anspn" >A.</span> 24.5 years </li> </div>   `,
             "option2": `<div class="que" > <li  ><span class="anspn" >B.</span> 28 years</li></div>  `,
             "option3": `<div class="que" > <li  ><span class="anspn" >C.</span> 18 years </li></div>   `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp10" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp10" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `A`
         }
     ];
@@ -686,14 +686,14 @@ let age=()=>{
 let loss=()=>{          
     container.style.display = "none";
     container2.style.display = "flex"
-    para.innerHTML = ` Hi,<b> ${text.value}</b> <p> you selected your Quiz topic is <strong>'<u>${lossbtn.value}</u>'</strong> </p> <p> Are you ready to give Quiz test. before going to start Quiz, Please read the below Instructions carefully. </p> <p><b> INSTRUCTION: </b> Read the Questions carefully and give you answer. you'll have _____ time to answer each questions. <strong>Before going to next Question you have to give answer in Input box, and then Click on CHECK button to Secure your answer. and After Clicking CHECK button You can Click NEXT button for Next Question. </strong> </p> <p>Best OF Luck.</p> <p>Click on Below Button to Start.</p> `
+    para.innerHTML = ` Hi,<b> ${text.value}</b> <p> you selected your Quiz topic is <strong>'<u>${lossbtn.value}</u>'</strong> </p> <p> Are you ready to give Quiz test. before going to start Quiz, Please read the below Instructions carefully. </p> <p><b> INSTRUCTION: </b> Read the Questions carefully and give you answer. you'll have <u>500 Seconds</u> to answer questions. <strong>Before going to next Question you have to give answer in Input box, and then Click on CHECK button to Secure your answer. and After Clicking CHECK button You can Click NEXT button for Next Question. Quiz will be auto Submitted, if Time will be over. </strong> </p> <p>Best OF Luck.</p> <p>Click on Below Button to Start.</p> `
     arr = [
         {
             "que": `<div class="que" > <span class="anspn" >Q-1. </span> The cost price of 20 articles is the same as the selling price of x articles. If the profit is 25%, then the value of x is</div>`,
             "option1": `<div class="que" > <li> <span class="anspn" >A.</span>  18  </li> </div>  `,
             "option2": `<div class="que" > <li> <span class="anspn" >B.</span> 16 </li></div> `,
             "option3": `<div class="que" > <li> <span class="anspn" >C.</span> 25 </li> </div> `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp1" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp1" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `B`
         },
         {
@@ -701,7 +701,7 @@ let loss=()=>{
             "option1": ` <div class="que" > <li> <span class="anspn" >A.</span> 250% </li></div>  `,
             "option2": ` <div class="que" > <li > <span class="anspn" >B.</span> 70% </li> </div> `,
             "option3": ` <div class="que" > <li > <span class="anspn" >C.</span> 30%</li></div>   `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp2" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp2" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `B`
         },
         {
@@ -709,7 +709,7 @@ let loss=()=>{
             "option1": ` <div class="que" > <li> <span class="anspn" >A.</span>  5 </li> </div>   `,
             "option2": ` <div class="que" > <li > <span class="anspn" >B.</span> 4 </li></div>  `,
             "option3": ` <div class="que" > <li > <span class="anspn" >C.</span> 6 </li></div>   `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp3" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp3" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `A`
         },
         {
@@ -717,7 +717,7 @@ let loss=()=>{
             "option1": `  <div class="que" > <li> <span class="anspn" >A.</span>  Rs. 88 </li> </div>    `,
             "option2": ` <div class="que" > <li > <span class="anspn" >B.</span>  Rs. 72</li>  </div> `,
             "option3": ` <div class="que" > <li > <span class="anspn" >C.</span>  Rs. 88.25</li>  </div>  `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp4" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp4" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `B`
         },
         {
@@ -725,7 +725,7 @@ let loss=()=>{
             "option1": ` <div class="que" > <li> <span class="anspn" >A.</span> Rs. 1190 </li>  </div>   `,
             "option2": ` <div class="que" > <li ><span class="anspn" >B.</span> Rs. 1090 </li> </div>  `,
             "option3": ` <div class="que" > <li ><span class="anspn" >C.</span> Rs. 1160 </li> </div>   `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp5" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp5" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `A`
         },
         {
@@ -733,7 +733,7 @@ let loss=()=>{
             "option1": `<div class="que" > <li ><span class="anspn" >A.</span> 1% </li> </div>    `,
             "option2": ` <div class="que" ><li  ><span class="anspn" >B.</span>  33.5% </li> </div>  `,
             "option3": ` <div class="que" ><li  ><span class="anspn" >C.</span> 44% </li> </div>   `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp6" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp6" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `C`
         },
         {
@@ -741,7 +741,7 @@ let loss=()=>{
             "option1": `<div class="que" > <li ><span class="anspn" >A.</span> Rs. 45 </li>   </div> `,
             "option2": ` <div class="que" ><li  ><span class="anspn" >B.</span> Rs. 75</li> </div> `,
             "option3": ` <div class="que" ><li  ><span class="anspn" >C.</span> Rs. 60 </li>  </div> `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp7" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp7" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `C`
         },
         {
@@ -749,7 +749,7 @@ let loss=()=>{
             "option1": `<div class="que" ><li > <span class="anspn" >A.</span>  Rs. 25,300 </li>  </div>  `,
             "option2": `<div class="que" ><li  ><span class="anspn" >B.</span> Rs. 22,500 </li> </div> `,
             "option3": `<div class="que" ><li  ><span class="anspn" >C.</span>  Rs. 21,000 </li> </div>  `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp8" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp8" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `A`
         },
         {
@@ -757,7 +757,7 @@ let loss=()=>{
             "option1": `<div class="que" ><li ><span class="anspn" >A.</span>  5% </li> </div>   `,
             "option2": `<div class="que" ><li  ><span class="anspn" >B.</span> 10% </li></div>  `,
             "option3": `<div class="que" ><li  ><span class="anspn" >C.</span> 8% </li> </div>  `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp9" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp9" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `A`
         },
         {
@@ -765,7 +765,7 @@ let loss=()=>{
             "option1": `<div class="que" > <li ><span class="anspn" >A.</span> 200% </li> </div>   `,
             "option2": `<div class="que" > <li  ><span class="anspn" >B.</span> 400% </li></div>  `,
             "option3": `<div class="que" > <li  ><span class="anspn" >C.</span> 100% </li></div>   `,
-            "input": `<p class="pr" > <input type="text" class="inp" id="inp10" placeholder="OPTION HERE.."> </p>`,
+            "input": `<p class="pr" > <input type="text" class="inp" id="inp10" placeholder="OPTION HERE.." autocomplete="off" > </p>`,
             "ans": `C`
         }
     ];

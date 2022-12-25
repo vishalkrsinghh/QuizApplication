@@ -7,11 +7,42 @@
     }
 
     body {
-        border: 2px solid;
         padding: 10px 15px;
-        background: linear-gradient(45deg, red, violet, grey, lightblue, orange, pink, green);
+        background: linear-gradient(45deg, rgb(238, 135, 135), rgb(243, 171, 243), grey, lightblue, rgb(243, 198, 113), pink, rgb(136, 240, 136));
         background-attachment: fixed;
         background-repeat: no-repeat;
+        animation-name: move;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        transition: 10s;
+        height: 100vh;
+    }
+    @keyframes move {
+        12%{
+            background: linear-gradient(45deg, rgb(238, 135, 135), rgb(243, 171, 243), grey, lightblue, rgb(243, 198, 113), pink, rgb(136, 240, 136));
+        }
+        24%{
+            background: linear-gradient(90deg, rgb(238, 135, 135), rgb(243, 171, 243), grey, lightblue, rgb(243, 198, 113), pink, rgb(136, 240, 136));
+        }
+        36%{
+            background: linear-gradient(135deg, rgb(238, 135, 135), rgb(243, 171, 243), grey, lightblue, rgb(243, 198, 113), pink, rgb(136, 240, 136));
+        }
+        48%{
+            background: linear-gradient(180deg, rgb(238, 135, 135), rgb(243, 171, 243), grey, lightblue, rgb(243, 198, 113), pink, rgb(136, 240, 136));
+        }
+        60%{
+            background: linear-gradient(225deg, rgb(238, 135, 135), rgb(243, 171, 243), grey, lightblue, rgb(243, 198, 113), pink, rgb(136, 240, 136));
+        }
+        72%{
+            background: linear-gradient(270deg, rgb(238, 135, 135), rgb(243, 171, 243), grey, lightblue, rgb(243, 198, 113), pink, rgb(136, 240, 136));
+        }
+        84%{
+            background: linear-gradient(315deg, rgb(238, 135, 135), rgb(243, 171, 243), grey, lightblue, rgb(243, 198, 113), pink, rgb(136, 240, 136));
+        }
+        96%{
+            background: linear-gradient(360deg, rgb(238, 135, 135), rgb(243, 171, 243), grey, lightblue, rgb(243, 198, 113), pink, rgb(136, 240, 136));
+        }
     }
 
     .container {
@@ -22,13 +53,13 @@
         align-items: center;
         gap: 10px;
         padding: 15px 0px;
-        box-shadow: 0px 0px 15px black;
+        box-shadow: 0px 0px 15px 2px white;
     }
 
     .container2 {
         border: 1px solid black;
         padding: 15px 10px;
-        box-shadow: 0px 0px 15px black;
+        box-shadow: 0px 0px 15px 2px white;
         display: none;
         background-color: aliceblue;
     }
@@ -40,7 +71,7 @@
         align-items: center;
         padding-top: 22px;
         padding-bottom: 12px;
-        box-shadow: 0px 0px 15px black;
+        box-shadow: 0px 0px 15px 2px white;
         display: none;
         background-color: aliceblue;
     }
@@ -52,7 +83,7 @@
         text-align: center;
         gap: 10px;
         padding: 15px 0px;
-        box-shadow: 0px 0px 15px black;
+        box-shadow: 0px 0px 15px 2px white;
         display: none;
         background-color: aliceblue;
     }
@@ -63,7 +94,7 @@
         text-align: center;
         padding: 15px 0px;
         margin-top: 50px;
-        box-shadow: 0px 0px 15px black;
+        box-shadow: 0px 0px 15px 2px white;
         display: none;
         background-color: aliceblue;
     }
